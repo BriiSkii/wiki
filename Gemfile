@@ -29,6 +29,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Devise
+gem 'devise', '~> 4.3'
+# Bootstrap
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+# jQuery Rails
+gem 'jquery-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
