@@ -35,6 +35,8 @@ gem 'devise', '~> 4.3'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 # jQuery Rails
 gem 'jquery-rails'
+# Petergate
+gem 'petergate', '~> 1.7', '>= 1.7.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
