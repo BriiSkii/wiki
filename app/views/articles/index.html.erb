@@ -1,6 +1,6 @@
 <h1>Index</h1>
 
-<%= link_to 'New Article', new_article_path %><br />
+<%= link_to 'New Article', new_article_path if logged_in?(:site_admin) %><br />
 
 <hr />
 
