@@ -37,6 +37,8 @@ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 # Petergate
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+# Friendly_id
+gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
