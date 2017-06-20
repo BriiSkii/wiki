@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Wiki</title>
     <%= csrf_meta_tags %>
 
@@ -13,15 +16,14 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 
-      <%= link_to 'Home', root_path %>
+      <%= render 'shared/nav' %>
 
-      <%  if current_user %>
-      <p><%= link_to "Logout", destroy_user_session_path, method: :delete %></p>
-      <% else %>
-        <%= link_to "Register", new_user_registration_path %>
-        <%= link_to "Login", new_user_session_path %>
-      <% end %>
+  <hr />
 
-    <%= yield %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
