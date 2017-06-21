@@ -10,6 +10,11 @@
   <% end %>
 
   <div class="form-group">
+    <%= f.collection_select :category_id,
+        Category.all, :id, :name, { prompt: "Category"} %>
+  </div>
+
+  <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
