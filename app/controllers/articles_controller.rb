@@ -3,7 +3,12 @@ class ArticlesController < ApplicationController
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
 
   def index
-    @articles = Article.all
+    if params[:category].blank?
+      @articles = Article.all
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @articles = Article.where(category_id: @category_id)
+    end 
   end
 
   def show
